@@ -1,0 +1,83 @@
+body {
+    background-image: url(k.jpg);
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+form {
+    width: 450px;
+    margin: auto;
+    background-color: #5f478b;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 8px;
+    opacity: 0.9;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-top: 20px;
+}
+h3,a{
+    color:white;
+    
+
+}
+h3,a:hover{
+    cursor: pointer;
+    color: #282232;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    margin-bottom: 0px;
+}
+
+#boton {
+    background-color: #796795;
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px 20px;
+    border: 3px solid #080808;
+    border-radius: 30px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    transition: all 0.4s;
+    align-self: center;
+    width: 100%;
+}
+
+#boton:hover {
+    cursor: pointer;
+    background-color: #27a457;
+    color: #090909;
+}
+
+@media (max-width: 480px) {
+    form {
+        width: 90%; /* Ajusta el formulario para que ocupe más espacio en pantallas pequeñas */
+    }
+    body {
+        background-size: cover; /* Ajuste adecuado para la imagen de fondo */
+        background-attachment: fixed;
+    }
+}

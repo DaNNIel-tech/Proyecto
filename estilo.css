@@ -1,0 +1,182 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Texto blanco para contraste */
+    background-image: url('fondo.jpg');
+    background-size: cover; /* Fondo cubre toda la pantalla */
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+header {
+    height: 100px;
+    background: #452584;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-transform: uppercase;
+    color: #f5e1e1;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/* Menú y enlaces */
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+.menu a {
+    color: #f5e1e1;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 0.9rem;
+    transition: color 0.4s;
+}
+
+.menu a:hover {
+    color: #f474ff;
+}
+
+/* Menú para dispositivos pequeños */
+.mostrar-menu,
+.esconder-menu {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    color: #f5e1e1;
+}
+
+#check {
+    display: none;
+}
+
+/* Estilos del banner */
+#banner {
+    background-image: url(R.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    color: #f5e1e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.contenido-banner h1 {
+    font-size: 2rem;
+}
+
+.contenido-banner p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.boton-empezar {
+    text-decoration: none;
+    background: #452584;
+    color: #f5e1e1;
+    border: 1px solid #7c62a9;
+    padding: 10px 20px;
+    transition: background 0.4s;
+}
+
+.boton-empezar:hover {
+    background: #e053ee;
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1rem;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: #452584;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: left 0.3s;
+    }
+
+    .menu a {
+        font-size: 1.2rem;
+        padding: 15px 0;
+    }
+
+    #check:checked ~ .menu {
+        left: 0;
+    }
+
+    .mostrar-menu {
+        display: block;
+    }
+
+    .esconder-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    #banner {
+        height: 60vh;
+    }
+
+    .contenido-banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .contenido-banner p {
+        font-size: 1rem;
+    }
+}
+
+/* Media queries para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .menu a {
+        font-size: 1rem;
+    }
+
+    .contenido-banner h1 {
+        font-size: 1.2rem;
+    }
+
+    .contenido-banner p {
+        font-size: 0.9rem;
+    }
+
+    .boton-empezar {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+    #banner{
+        background-size: cover;
+    }
+}
+
+
+
+
+    
+
+
+

@@ -1,0 +1,121 @@
+
+
+.logo {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 200;
+   
+}
+.logo:hover{
+    color: blue;
+    transition: all 0.4 ;
+    
+    
+}
+
+/* Estilos para los enlaces del menú */
+.menu a {
+    color: rgb(245, 225, 225);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+
+/* Estilos para el ícono del menú (hamburguesa) y la X */
+.mostrar-menu,
+.esconder-menu {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover {
+    color: blue;
+}
+
+#check {
+    display: none;
+}
+
+/* Estilos del banner */
+#banner {
+    padding: 0 100px;
+  
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.contenido-banner {
+    position: relative;
+    color: violet;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenido-banner h3 {
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0;
+}
+
+.contenido-banner h3 span {
+    font-weight: 600;
+}
+
+
+
+
+
+/* Estilos para el menú en pantallas pequeñas (media queries) */
+@media(max-width: 768px) {
+    .mostrar-menu,
+    .esconder-menu {
+        display: block; /* Mostrar íconos de menú y cerrar en pantallas pequeñas */
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: red;
+        left: 0;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .menu a {
+        display: block;
+        padding: 20px;
+    }
+
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+
+  
+    #check:checked ~ .menu {
+        right: 0;
+    }
+}
+
+
+
+    
+
+
+

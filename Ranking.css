@@ -1,0 +1,42 @@
+/* Estilos generales del ranking */
+
+
+
+#ranking {
+  padding: 20px;
+  background-color: whitesmoke;
+  margin-top: 30px;
+}
+
+#ranking h2 {
+  text-align: center;
+  color: #333;
+}
+
+#ranking table {
+  width: 100%;
+  border-collapse: collapse;
+}
+tr{
+  background-color: #f474ff;
+}
+
+
+#ranking th, #ranking td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+#ranking th {
+  background-color: #333;
+  color: white;
+}
+
+#ranking tr:nth-child(even) {
+  background-color: purple;
+}
+
+#ranking tr:hover {
+  background-color: black;
+}
